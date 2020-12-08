@@ -16,7 +16,16 @@ header, main, aside, footer {
   margin: 1em;
 }
 
-header { background: #20C997; }
-main { background: #9E84FD; }
-aside { background:  #E1EA87; }
-footer { background: #428CFF; }
+header { background: #20C997; grid-area: header; }
+main { background: #9E84FD; grid-area: main; }
+aside { background:  #E1EA87; grid-area: aside; }
+footer { background: #428CFF; grid-area: footer; }
+
+.container {
+  display: grid;
+  grid-template-areas: 
+    "header header header"
+    "main main aside"
+    "footer footer footer"
+  ;
+}
