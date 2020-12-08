@@ -28,4 +28,10 @@ footer { background: #428CFF; grid-area: footer; }
     "main main aside"
     "footer footer footer"
   ;
+  /* 2. megoldas:
+  grid-template-areas: 
+    "header header aside"
+    "main main aside"
+    "footer footer aside"
+  ; */
 }
